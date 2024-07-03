@@ -15,7 +15,7 @@
     height: auto;
     align-items: center;
     background-color: #FED766;
-    
+
 }
 
 #titulo {
@@ -26,8 +26,10 @@
 }
 
 .dtFigma {
-    -webkit-text-stroke-width: 4px; /* largura da borda */
-    -webkit-text-stroke-color: #000; /* cor da borda */
+    -webkit-text-stroke-width: 4px;
+    /* largura da borda */
+    -webkit-text-stroke-color: #000;
+    /* cor da borda */
     font-size: 54pt;
     font-family: "Poppins", sans-serif;
 }
@@ -43,11 +45,13 @@ main {
     border-top: 4px solid black;
     border-bottom: 4px solid black;
 }
-footer{
-  width: 100%;
-  height: 86px;
+
+footer {
+    width: 100%;
+    height: 86px;
     background-color: #FED766;
 }
+
 #back {
     display: flex;
     flex-direction: column;
@@ -94,12 +98,51 @@ nav ul {
 }
 
 .nvg a {
-    color: black;
+    position: relative;
     text-decoration: none;
+    color: #000;
+}
+
+.nvg a:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 0px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+a:hover:after {
+    height: 2px;
+    width: 100%;
+    /* Expande a largura para 100% do link */
+    border-radius: 0;
+    /* Remove o arredondamento para formar a barra */
 }
 
 #container {
     display: flex;
     flex-direction: row;
     background-color: transparent;
+}
+
+@keyframes exemplo {
+    0% {
+        transform: rotate(360deg);      
+    }
+    25% {
+        transform: rotate(0deg);
+    }
+    50% {
+        transform: rotate(360deg);
+    }
+   
+}
+
+.logo {
+    animation: exemplo 1s alternate;
 }
