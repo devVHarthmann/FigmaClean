@@ -21,7 +21,9 @@
 #titulo {
     font-size: 22pt;
     font-weight: 600;
-
+    text-decoration: none;
+    color: #000;
+    
 
 }
 
@@ -50,6 +52,9 @@ footer {
     width: 100%;
     height: 86px;
     background-color: #FED766;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
 }
 
 #back {
@@ -123,6 +128,33 @@ a:hover:after {
     border-radius: 0;
     /* Remove o arredondamento para formar a barra */
 }
+#titulo {
+    position: relative;
+    text-decoration: none;
+    color: #000;
+}
+
+#titulo:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0px;
+    height: 0px;
+    background-color: #000;
+    border-radius: 50%;
+    transition: all 0.5s ease;
+}
+
+#titulo:hover:after {
+    height: 2px;
+    width: 100%;
+    /* Expande a largura para 100% do link */
+    border-radius: 0;
+    /* Remove o arredondamento para formar a barra */
+}
+
 
 #container {
     display: flex;
@@ -145,4 +177,43 @@ a:hover:after {
 
 .logo {
     animation: exemplo 1s alternate;
+}
+.Sq{
+    width: 595px;
+    height: 339px;    
+    border-radius: 10px;
+}
+#painelLogo{
+    width: 339px;
+    height: 339px;
+    background-color: white;
+    border-radius: 80px;
+    border: 5px solid black;
+}
+#logoInt{
+ width: 317px;   
+ height: 317px;
+ 
+ 
+}
+#introd{
+    justify-content: space-around;
+}
+#sq1{
+    background-color: #F24E1E;
+}
+#sq2{
+    background-color: #0ACF83;
+}
+#sq3{
+background-color: #FFBF1B;
+}
+#sq4{
+    background-color: #1ABCFE;
+}
+#sq5{
+    background-color: #A259FF;
+}
+#cont{
+    margin-left: 80%;
 }
