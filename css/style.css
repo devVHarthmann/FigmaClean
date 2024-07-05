@@ -12,7 +12,7 @@
     flex-direction: row;
     width: 100%;
     min-height: 100px;
-    height: auto;
+   
     align-items: center;
     background-color: #FED766;
 
@@ -23,12 +23,13 @@
     font-weight: 600;
     text-decoration: none;
     color: #000;
+    position: relative;
     
 
 }
 
 .dtFigma {
-    -webkit-text-stroke-width: 4px;
+    -webkit-text-stroke-width: 2px;
     /* largura da borda */
     -webkit-text-stroke-color: #000;
     /* cor da borda */
@@ -40,10 +41,11 @@ main {
     width: 1366px;
     height: 455px;
     display: flex;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    background-image: url("/img/background.jpeg");
+    background-image: url("../img/background.jpeg");
     border-top: 4px solid black;
     border-bottom: 4px solid black;
 }
@@ -87,9 +89,11 @@ footer {
 }
 
 nav {
-
-    margin-left: 44%;
+    width: 2000px;
+    gap: 30px;
+    margin-left: 500px;
     font-weight: 400;
+    position: absolute;
 }
 
 nav ul {
@@ -169,19 +173,20 @@ a:hover:after {
     25% {
         transform: rotate(0deg);
     }
-    50% {
-        transform: rotate(360deg);
-    }
+   
    
 }
 
 .logo {
-    animation: exemplo 1s alternate;
+    transform: rotate(-360deg);
+    animation: exemplo 2s alternate;
 }
 .Sq{
     width: 595px;
     height: 339px;    
     border-radius: 10px;
+    
+    
 }
 #painelLogo{
     width: 339px;
@@ -214,6 +219,26 @@ background-color: #FFBF1B;
 #sq5{
     background-color: #A259FF;
 }
+#sq6{
+    background-color: red;
+}
 #cont{
     margin-left: 80%;
+}
+#site{
+    border-radius: 10px;
+    border:px solid black;
+}
+#janelaAtual{
+    text-decoration: underline ;
+    text-decoration-thickness: 3px;
+}
+.Sq h1{
+    margin-top: 10px;
+    margin-left: 20px;
+}
+p{
+    text-align: justify;
+    margin-left: 20px;
+    margin-right: 20px;
 }
