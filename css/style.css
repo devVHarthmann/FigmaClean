@@ -43,7 +43,7 @@ main {
     align-items: center;
     justify-content: center;
     background-color: transparent;
-    background-image: url("/img/background.jpeg");
+    background-image: url("../img/background.jpeg");
     border-top: 4px solid black;
     border-bottom: 4px solid black;
 }
