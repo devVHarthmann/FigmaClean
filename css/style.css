@@ -10,9 +10,9 @@
 #cabecalho {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    min-height: 100px;
-   
+    width: 1366px;
+    height: 15vh;
+    overflow-y: hidden;
     align-items: center;
     background-color: #FED766;
 
@@ -24,22 +24,22 @@
     text-decoration: none;
     color: #000;
     position: relative;
-    
+
 
 }
 
 .dtFigma {
     -webkit-text-stroke-width: 2px;
-    /* largura da borda */
+
     -webkit-text-stroke-color: #000;
-    /* cor da borda */
+
     font-size: 54pt;
     font-family: "Poppins", sans-serif;
 }
 
 main {
     width: 1366px;
-    height: 455px;
+    height: 71vh;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -52,7 +52,7 @@ main {
 
 footer {
     width: 100%;
-    height: 86px;
+    height: 14vh;
     background-color: #FED766;
     display: flex;
     flex-direction: row;
@@ -89,15 +89,17 @@ footer {
 }
 
 nav {
-    width: 2000px;
+    width: 800px;
     gap: 30px;
     margin-left: 500px;
     font-weight: 400;
     position: absolute;
+    flex-direction: row;
 }
 
 nav ul {
     display: flex;
+    flex-direction: row;
     gap: 20px;
     font-size: 13pt;
 }
@@ -128,10 +130,11 @@ nav ul {
 a:hover:after {
     height: 2px;
     width: 100%;
-    /* Expande a largura para 100% do link */
+
     border-radius: 0;
-    /* Remove o arredondamento para formar a barra */
+
 }
+
 #titulo {
     position: relative;
     text-decoration: none;
@@ -154,9 +157,9 @@ a:hover:after {
 #titulo:hover:after {
     height: 2px;
     width: 100%;
-    /* Expande a largura para 100% do link */
+
     border-radius: 0;
-    /* Remove o arredondamento para formar a barra */
+
 }
 
 
@@ -168,77 +171,119 @@ a:hover:after {
 
 @keyframes exemplo {
     0% {
-        transform: rotate(360deg);      
+        transform: rotate(360deg);
     }
+
     25% {
         transform: rotate(0deg);
     }
-   
-   
+
+
 }
 
 .logo {
     transform: rotate(-360deg);
     animation: exemplo 2s alternate;
 }
-.Sq{
+
+.Sq {
     width: 595px;
-    height: 339px;    
+    height: 339px;
     border-radius: 10px;
-    
-    
+
+
 }
-#painelLogo{
+
+#painelLogo {
     width: 339px;
     height: 339px;
     background-color: white;
     border-radius: 80px;
     border: 5px solid black;
 }
-#logoInt{
- width: 317px;   
- height: 317px;
- 
- 
+
+#logoInt {
+    width: 317px;
+    height: 317px;
+
+
 }
-#introd{
+
+#introd {
     justify-content: space-around;
 }
-#sq1{
+
+#sq1 {
     background-color: #F24E1E;
 }
-#sq2{
+
+#sq2 {
     background-color: #0ACF83;
 }
-#sq3{
-background-color: #FFBF1B;
+
+#sq3 {
+    background-color: #FFBF1B;
 }
-#sq4{
+
+#sq4 {
     background-color: #1ABCFE;
 }
-#sq5{
+
+#sq5 {
     background-color: #A259FF;
 }
-#sq6{
+
+#sq6 {
     background-color: red;
 }
-#cont{
+
+#cont {
     margin-left: 80%;
 }
-#site{
+
+#site {
     border-radius: 10px;
-    border:px solid black;
+    border: px solid black;
 }
-#janelaAtual{
-    text-decoration: underline ;
+
+#janelaAtual {
+    text-decoration: underline;
     text-decoration-thickness: 3px;
 }
-.Sq h1{
+
+.Sq h1 {
     margin-top: 10px;
     margin-left: 20px;
 }
-p{
+
+p {
     text-align: justify;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+@media (max-width: 850px) {
+    main {
+        width: 850px;
+    }
+
+    #cabecalho {
+        width: 850px;
+    }
+    footer{
+        width: 850px;
+    }
+    nav {
+
+        display: flex;
+        width: 500px;
+        margin-left: 400px;
+    }
+
+    nav ul {
+        justify-content: center;
+        align-items: center;
+        gap: 0px;
+        flex-direction: column;
+    }
 }
