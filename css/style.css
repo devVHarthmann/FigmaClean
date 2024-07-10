@@ -200,6 +200,8 @@ a:hover:after {
     background-color: white;
     border-radius: 80px;
     border: 5px solid black;
+    align-items: center;
+    justify-content: center;
 }
 
 #logoInt {
@@ -261,29 +263,69 @@ p {
     margin-left: 20px;
     margin-right: 20px;
 }
+@media (max-width: 450px){
+    .Sq{
+        height: auto;
+        width: 300px;
+    }
+}
 
-@media (max-width: 850px) {
+@media (max-width: 900px) {
     main {
-        width: 850px;
+        width: 100%;
+        height: 995px;
+        flex-direction: column;
+        
     }
 
     #cabecalho {
-        width: 850px;
+        width: 100%;
+        height: 21vh;
     }
     footer{
-        width: 850px;
+        width: 100%;
+        justify-content: center;
+        height: 20.5vh;
+    }
+    .logo{
+        width: 120px;
+        height: 120px;
+    }
+    #titulo{
+        font-size: 36pt;
+    }
+    p{
+        font-size: 15pt;
+    }
+    .Sq{
+        width: 700px;
+        height: 370px;
     }
     nav {
-
+        
         display: flex;
         width: 500px;
-        margin-left: 400px;
+        margin-left: 450px;
     }
-
+    nav ul li{
+        font-size: 15pt;
+    }
+    #logoInt{
+        width: 400px;
+        height: 400px;
+    }
+    #painelLogo{
+        width: 450px;
+        height: 450px;
+    }
     nav ul {
         justify-content: center;
         align-items: center;
         gap: 0px;
         flex-direction: column;
+    }
+    #site{
+        width: 700px;
+        height: 370px;
     }
 }
